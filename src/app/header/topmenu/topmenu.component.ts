@@ -3,7 +3,7 @@ import { HeaderComponent } from '../header.component';
 @Component({
   selector: 'topmenu',
   standalone  : true, 
-  imports: [HeaderComponent],
+  imports: [],
   templateUrl: './topmenu.component.html',
   styleUrl: './topmenu.component.css'
 })

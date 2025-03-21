@@ -1,0 +1,101 @@
+
+.top-bar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px; /* Align to the right */
+    bottom: 40px; /* Align to the bottom */
+  }
+  
+  .top-bar li {
+    position: relative;
+  }
+  
+  .top-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em; /* Smaller text size */
+    padding: 5px 10px;
+    border-radius: 5px;
+    left: 900px;
+    bottom: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .top-bar a:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* Dropdown Styles */
+.dropdown, .dropdown1 {
+    position: relative;
+  }
+  
+  .dropdown-content, .dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 125px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .dropdown-content a, .dropdown1-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+  }
+  
+  .dropdown-content a:hover, .dropdown1-content a:hover {
+    background-color: #007bff;
+    padding-left: 20px;
+  }
+  
+  .dropdown:hover .dropdown-content, .dropdown1:hover .dropdown1-content {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .dropdown-content::before, .dropdown1-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #444 transparent;
+  }
+  
+  /* Unique and Modern Styles */
+  .dropdown-content, .dropdown1-content {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+  }
+  
+  .dropdown-content a, .dropdown1-content a {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .dropdown-content a:hover, .dropdown1-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 20px;
+  }
+  
+  .dropdown-content::before, .dropdown1-content::before {
+    border-color: transparent transparent #6a11cb transparent;
+  }
