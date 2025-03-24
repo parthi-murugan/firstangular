@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-singnin',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './singnin.component.html',
-  styleUrl: './singnin.component.css'
+  styleUrls: ['./singnin.component.css'],
 })
-export class SingninComponent {
-
-}
+export class SingninComponent {}
